@@ -128,6 +128,10 @@ app.post('/new',(req,res)=>{
     })
 })
 
+app.get('/hello', function (req, res) {
+  res.send('hello world')
+})
+
 app.post('/send',(req,res)=>{
    
     var fromAccount = req.body.fromAccount;
